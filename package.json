@@ -1,6 +1,29 @@
 {
+  "name": "drag-race-fantasy",
+  "description": "You need Facebook to use VH1's. You'll need whiskey to use this.",
+  "author": "Kim Thompson",
+  "version": "1.0.0",
+  "license": "ISC",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
   "devDependencies": {
+    "cssnano": "^4.1.10",
     "pug": "^2.0.3",
     "stylus": "^0.54.5"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build index.pug --public-url ./ --out-dir docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimthompson/drag-race-fantasy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kimthompson/drag-race-fantasy/issues"
+  },
+  "homepage": "https://github.com/kimthompson/drag-race-fantasy#readme"
 }
