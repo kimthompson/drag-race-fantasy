@@ -8,15 +8,21 @@
   "directories": {
     "doc": "docs"
   },
-  "dependencies": {},
+  "dependencies": {
+    "vue": "^2.6.8",
+    "vue-hot-reload-api": "^2.3.3"
+  },
   "devDependencies": {
+    "@vue/component-compiler-utils": "^2.6.0",
     "cssnano": "^4.1.10",
     "pug": "^2.0.3",
-    "stylus": "^0.54.5"
+    "stylus": "^0.54.5",
+    "vue-template-compiler": "^2.6.8"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build index.pug --public-url ./ --out-dir docs"
+    "start": "parcel src/index.pug",
+    "publish": "parcel build src/index.pug --public-url ./ --out-dir docs"
   },
   "repository": {
     "type": "git",
