@@ -1,2 +1,19 @@
+color-yellow = #ffe900
+color-pink = #ff158b
+color-orange = #ff9700
+color-teal = #22d3c1
+
 body
-  background-color: purple
+  background-color color-yellow
+
+h1, h2, h3, h4, h5, h6, th
+  font-family 'Sedgwick Ave Display', cursive
+  color color-pink
+
+table, tr, td, p, ul, li, ol, span, div
+  font-family 'Lato', sans-serif
+
+table
+  background-color color-teal
+  width 400px
+  border-radius 4px
