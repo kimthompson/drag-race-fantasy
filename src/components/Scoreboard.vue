@@ -1,12 +1,20 @@
 <template lang="pug">
-  h2 I'm a scoreboard
+  table
+    tr
+      th Username
+      th Scores
+    tr(v-for='score in scores')
+      td.username {{ score['Username (Gamertag)'] }}
+      td.score {{ score['Total'] }}
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   data() {
     return {
-      scores: []
+      scores: null
     }
   },
   mounted() {
@@ -14,26 +22,35 @@ export default {
   },
   methods: {
     getScores() {
-      var self = this
-      fetch('https://sheetsu.com/apis/v1.0bu/1f7490f595d1')
-      .then(function(res) {
-        self.scores = res.json()
-        console.log(res.json())
+      axios
+      .get('https://sheetsu.com/apis/v1.0bu/1f7490f595d1')
+      .then(res => {
+        this.scores = res.data
+        console.log(this.scores)
       })
     }
   }
 }
-
-// fetch('https://sheetsu.com/apis/v1.0bu/1f7490f595d1')
-// .then(function(res) {
-//   return res.json();
-// })
-// .then(function(json) {
-//   console.log(json);
-// });
 </script>
 
 <style lang="stylus" scoped>
-h2
-  font-family: sans-serif;
+table
+  text-align left
+  margin 2em
+  padding 1em
+
+td
+  margin 1em
+
+th
+  font-size 1.8em
+
+.username
+  width 15em
+  font-size 1.2em
+
+.score
+  text-align right
+  font-size 1.2em
+  font-weight bold
 </style>
