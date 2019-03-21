@@ -24,21 +24,21 @@
 <script>
 import scores from "../data/leaderboard.json";
 
-import akeria from '../assets/akeria.webp';
-import ariel from '../assets/ariel.webp';
-import brooke from '../assets/brooke.webp';
-import honey from '../assets/honey.webp';
-import kahanna from '../assets/kahanna.webp';
-import mercedes from '../assets/mercedes.webp';
-import nina from '../assets/nina.webp';
-import plastique from '../assets/plastique.webp';
-import rajah from '../assets/rajah.webp';
-import scarlet from '../assets/scarlet.webp';
-import shuga from '../assets/shuga.webp';
-import silky from '../assets/silky.webp';
-import soju from '../assets/soju.webp';
-import vanessa from '../assets/vanessa.webp';
-import yvie from '../assets/yvie.webp';
+import akeria from '../assets/akeria.png';
+import ariel from '../assets/ariel.png';
+import brooke from '../assets/brooke.png';
+import honey from '../assets/honey.png';
+import kahanna from '../assets/kahanna.png';
+import mercedes from '../assets/mercedes.png';
+import nina from '../assets/nina.png';
+import plastique from '../assets/plastique.png';
+import rajah from '../assets/rajah.png';
+import scarlet from '../assets/scarlet.png';
+import shuga from '../assets/shuga.png';
+import silky from '../assets/silky.png';
+import soju from '../assets/soju.png';
+import vanessa from '../assets/vanessa.png';
+import yvie from '../assets/yvie.png';
 
 const queens = {
   "akeria": akeria,
