@@ -12,12 +12,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.pug",
     "publish": "parcel build src/index.pug --public-url ./ --out-dir docs",
-    "toJson": "csvtojson src/data/leaderboard.csv > src/data/leaderboard.json && csvtojson src/data/log.csv > src/data/log.json"
+    "data:format": "csvtojson ~/Downloads/Drag\\ Race\\ Draft\\ -\\ Scoreboard.csv > src/data/leaderboard.json && csvtojson ~/Downloads/Drag\\ Race\\ Draft\\ -\\ Log.csv > src/data/log.json"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "csvtojson": "^2.0.8",
-    "fs": "0.0.1-security",
+    "phantomjs-prebuilt": "^2.1.16",
     "vue": "^2.6.8",
     "vue-hot-reload-api": "^2.3.3"
   },

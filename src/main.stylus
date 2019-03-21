@@ -56,11 +56,25 @@ th
   font-size 0.95em
 
 .points
-  text-align right
+  text-align center
   font-weight bold
+  font-size 1.4em
+
+.eventPoints
+  text-align right
+  font-size 1em
 
 .herstory
   background-color color-yellow
 
 .episode
   display inline-block
+
+.headshot
+  border-radius 50%
+
+.mugshot, .teams
+  text-align center;
+
+.bitch
+  border 10px solid color-black
