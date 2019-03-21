@@ -12,7 +12,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.pug",
     "publish": "parcel build src/index.pug --public-url ./ --out-dir docs",
-    "toJson": "csvtojson src/data/leaderboard.csv > src/data/leaderboard.json && csvtojson src/data/log.csv > src/data/log.json && csvtojson src/data/tracker.csv > src/data/tracker.json"
+    "toJson": "csvtojson src/data/leaderboard.csv > src/data/leaderboard.json && csvtojson src/data/log.csv > src/data/log.json"
   },
   "dependencies": {
     "axios": "^0.18.0",

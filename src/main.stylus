@@ -47,6 +47,7 @@ th
 
 .username
   width 15em
+  font-weight bold
 
 .queen
   width 12em

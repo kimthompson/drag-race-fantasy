@@ -2,9 +2,14 @@
   table.scoreboard
     tr
       th Username
+      th(colspan="4" class="teams") Teams
       th Scores
     tr(v-for='score in scores')
       td.username {{ score['Username (Gamertag)'] }}
+      td.queen {{ score['First Queen'] }}
+      td.queen {{ score['Second Queen'] }}
+      td.queen {{ score['Third Queen'] }}
+      td.queen {{ score['The Bitch'] }}
       td.points {{ score['Total'] }}
 </template>
 
