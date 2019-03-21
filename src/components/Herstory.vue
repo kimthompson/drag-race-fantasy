@@ -1,64 +1,44 @@
 <template lang="pug">
   .herstory
     h2 Herstory
-    //- TODO: loop per episode
-    h3 Episode 1
-    table
-      tr
-        th Tag
-        th Winnah
-        th Points
-      //- TODO: loop per tag
-      tr
-        td #mini
-        td Silky Nutmeg Ganache
-        td 3
-      tr
-        td #winner
-        td Brooke Lynn Hytes
-        td 7
-      tr
-        td #bottom
-        td Kahanna Montrese
-        td -5
-      tr
-        td #bottom
-        td Soju
-        td -5
-      tr
-        td #shantay
-        td Kahanna Montrese
-        td 2
-      tr
-        td #sashay
-        td Soju
-        td -5
+    .episodes
+      .episode(v-for='episode in data')
+        h3 Episode {{ episode[0]['Episode']}}
+        table
+          tr
+            th Queen
+            th Tag
+            th Points
+          tr(v-for='event in episode')
+            td.queen {{ event['Queen'] }}
+            td.tag {{ event['Tag'] }}
+            td.points.eventPoints {{ event['Points'] }}
 </template>
 
 <script>
+import log from "../data/log.json";
+
+let episodes = [];
+let currentEp = 0;
+log.forEach(e => {
+  if (currentEp < e.Episode) {
+    episodes.push(e.Episode);
+    currentEp = e.Episode;
+  }
+});
+
+let data = [];
+episodes.forEach(e => {
+  let subArray = log.filter(item => item.Episode == e);
+  data.push(subArray);
+});
+
 export default {
   data() {
     return {
-      scores: []
-    }
-  },
-  mounted() {
-    this.getScores()
-  },
-  methods: {
-    getScores() {
-      var self = this
-      fetch('https://sheetsu.com/apis/v1.0bu/1f7490f595d1')
-      .then(function(res) {
-        self.scores = res.json()
-        console.log(res.json())
-      })
-    }
+      data: data
+    };
   }
-}
+};
 </script>
 
-<style lang="stylus" scoped>
-h2
-  font-family: sans-serif;
-</style>
