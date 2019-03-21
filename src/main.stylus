@@ -2,18 +2,65 @@ color-yellow = #ffe900
 color-pink = #ff158b
 color-orange = #ff9700
 color-teal = #22d3c1
+color-black = #010101
+color-white = #efefef
 
 body
-  background-color color-yellow
+  background-color color-orange
+  margin 0
 
-h1, h2, h3, h4, h5, h6, th
+h1, h2, h3, h4, h5, h6
   font-family 'Sedgwick Ave Display', cursive
-  color color-pink
+  color color-black
+  margin 5px
+
+h1
+  font-size 2.3em
+
+h2
+  font-size 1.9em
+
+h3
+  font-size 1.5em
 
 table, tr, td, p, ul, li, ol, span, div
   font-family 'Lato', sans-serif
+  color color-black
+
+th
+  font-family 'Sedgwick Ave Display', cursive
+  color color-pink
 
 table
   background-color color-teal
-  width 400px
   border-radius 4px
+  text-align left
+  margin 5px
+
+td
+  margin 1em
+  padding 1px 10px
+
+th
+  font-size 1.8em
+  padding 5px 10px
+
+.username
+  width 15em
+  font-weight bold
+
+.queen
+  width 12em
+
+.queen, .tag, .eventPoints
+  font-size 0.95em
+
+.points
+  text-align right
+  font-weight bold
+
+.herstory
+  background-color color-yellow
+
+.episode
+  display inline-block
