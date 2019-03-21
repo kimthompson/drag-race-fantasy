@@ -2,7 +2,8 @@
   table.scoreboard
     tr
       th Username
-      th(colspan="4" class="teams") Teams
+      th(colspan="3" class="teams") Teams
+      th The Bitch
       th Scores
     tr(v-for='score in scores')
       td.username {{ score['Username (Gamertag)'] }}
