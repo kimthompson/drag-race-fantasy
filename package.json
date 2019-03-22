@@ -9,9 +9,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.pug",
-    "publish": "parcel build src/index.pug --public-url ./ --out-dir docs",
+    "build": "parcel build src/index.pug --public-url ./ --out-dir docs",
     "data:format": "csvtojson ~/Downloads/Drag\\ Race\\ Draft\\ -\\ Scoreboard.csv > src/data/leaderboard.json && csvtojson ~/Downloads/Drag\\ Race\\ Draft\\ -\\ Log.csv > src/data/log.json"
   },
   "dependencies": {

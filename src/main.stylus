@@ -86,7 +86,6 @@ th
   margin 10px
 
 .username
-  width 15em
   font-weight bold
   text-align center
 
