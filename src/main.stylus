@@ -10,7 +10,7 @@ body
   margin 0
 
 h1, h2, h3, h4, h5, h6
-  font-family 'Sedgwick Ave Display', cursive
+  font-family 'Fugaz One', cursive
   color color-black
   margin 5px
 
@@ -28,7 +28,7 @@ table, tr, td, p, ul, li, ol, span, div
   color color-black
 
 th
-  font-family 'Sedgwick Ave Display', cursive
+  font-family 'Fugaz One', cursive
   color color-pink
 
 table
@@ -89,6 +89,7 @@ th
 .username
   font-weight bold
   text-align center
+  height 3em
 
 .episodes
   display flex
