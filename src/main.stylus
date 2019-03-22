@@ -45,10 +45,6 @@ th
   font-size 1.8em
   padding 5px 10px
 
-.username
-  width 15em
-  font-weight bold
-
 .queen
   width 12em
 
@@ -58,17 +54,18 @@ th
 .points
   text-align center
   font-weight bold
-  font-size 1.4em
+  font-size 2.5em
 
 .eventPoints
   text-align right
   font-size 1em
 
+.scoreboardPoints
+  color color-pink
+  text-shadow -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
+
 .herstory
   background-color color-yellow
-
-.episode
-  display inline-block
 
 .headshot
   border-radius 50%
@@ -78,3 +75,21 @@ th
 
 .bitch
   border 10px solid color-black
+
+.scoreboard
+  display flex
+  flex-wrap wrap
+
+.scoreboard_player
+  background-color color-teal
+  border-radius 10px
+  margin 10px
+
+.username
+  width 15em
+  font-weight bold
+  text-align center
+
+.episodes
+  display flex
+  flex-wrap wrap

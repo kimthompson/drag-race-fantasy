@@ -1,24 +1,20 @@
 <template lang="pug">
-  table.scoreboard
-    tr
-      th Username
-      th(colspan="3" class="teams") Teams
-      th Scores
-    tr(v-for='score in scores')
-      td.username {{ score['Username'] }}
-      td.queen
+  .scoreboard
+    .scoreboard_player(v-for='score in scores')
+      h3.username {{ score['Username']}}
+      h2.points.scoreboardPoints {{ score['Total'] }}
+      span.queen
         figure.mugshot
           img(:src="score['firstImage']", :class="['headshot', score['First Queen'] === score['The Bitch'] ? 'bitch' : '']")
           figcaption {{ score['First Queen'] }}
-      td.queen
+      span.queen
         figure.mugshot
             img(:src="score['secondImage']", :class="['headshot', score['Second Queen'] === score['The Bitch'] ? 'bitch' : '']")
             figcaption {{ score['Second Queen'] }}
-      td.queen
+      span.queen
         figure.mugshot
           img(:src="score['thirdImage']", :class="['headshot', score['Third Queen'] === score['The Bitch'] ? 'bitch' : '']")
           figcaption {{ score['Third Queen'] }}
-      td.points {{ score['Total'] }}
 </template>
 
 <script>
@@ -62,9 +58,18 @@ scores.forEach(score => {
   score.firstImage = queens[score['First Queen'].split(" ")[0].toLowerCase().replace("'", "")];
   score.secondImage = queens[score['Second Queen'].split(" ")[0].toLowerCase().replace("'", "")];
   score.thirdImage = queens[score['Third Queen'].split(" ")[0].toLowerCase().replace("'", "")];
+  console.log(score['Total'])
 })
 
-console.log(scores[0].firstImage)
+scores.sort((a,b) => {
+  if (parseInt(a['Total']) > parseInt(b['Total'])) return -1;
+  if (parseInt(a['Total']) < parseInt(b['Total'])) return 1;
+  return 0;
+})
+
+scores.forEach(score => {
+  console.log(score['Total'])
+})
 
 export default {
   data() {
