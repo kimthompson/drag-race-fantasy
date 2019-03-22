@@ -84,6 +84,7 @@ th
   background-color color-teal
   border-radius 10px
   margin 10px
+  width 20em
 
 .username
   font-weight bold
