@@ -76,6 +76,9 @@ th
 .bitch
   border 10px solid color-black
 
+.dead
+  filter grayscale(100%)
+
 .scoreboard
   display flex
   flex-wrap wrap
