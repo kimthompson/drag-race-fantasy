@@ -5,7 +5,7 @@
       h2.points.scoreboardPoints {{ score['Total'] }}
       span.queen
         figure.mugshot
-          img(:src="score['firstImage']", :class="['headshot', score['First Queen'] === score['The Bitch'] ? 'bitch' : '']")
+          img(:src="score['firstImage']", :class="['headshot', score['First Queen'] === score['The Bitch'] ? 'bitch' : '', deadQueens.includes(score['First Queen']) ? 'dead' : '']")
           figcaption {{ score['First Queen'] }}
       span.queen
         figure.mugshot
@@ -18,47 +18,49 @@
 </template>
 
 <script>
-import scores from "../data/leaderboard.json";
+import scores from '../data/leaderboard.json'
+import { deadQueens } from '../data/dead-queens.js'
 
-import akeria from '../assets/akeria.png';
-import ariel from '../assets/ariel.png';
-import brooke from '../assets/brooke.png';
-import honey from '../assets/honey.png';
-import kahanna from '../assets/kahanna.png';
-import mercedes from '../assets/mercedes.png';
-import nina from '../assets/nina.png';
-import plastique from '../assets/plastique.png';
-import rajah from '../assets/rajah.png';
-import scarlet from '../assets/scarlet.png';
-import shuga from '../assets/shuga.png';
-import silky from '../assets/silky.png';
-import soju from '../assets/soju.png';
-import vanessa from '../assets/vanessa.png';
-import yvie from '../assets/yvie.png';
+import akeria from '../assets/akeria.png'
+import ariel from '../assets/ariel.png'
+import brooke from '../assets/brooke.png'
+import honey from '../assets/honey.png'
+import kahanna from '../assets/kahanna.png'
+import mercedes from '../assets/mercedes.png'
+import nina from '../assets/nina.png'
+import plastique from '../assets/plastique.png'
+import rajah from '../assets/rajah.png'
+import scarlet from '../assets/scarlet.png'
+import shuga from '../assets/shuga.png'
+import silky from '../assets/silky.png'
+import soju from '../assets/soju.png'
+import vanessa from '../assets/vanessa.png'
+import yvie from '../assets/yvie.png'
+
+console.log(deadQueens)
 
 const queens = {
-  "akeria": akeria,
-  "ariel": ariel,
-  "brooke": brooke,
-  "honey": honey,
-  "kahanna": kahanna,
-  "mercedes": mercedes,
-  "nina": nina,
-  "plastique": plastique,
-  "rajah": rajah,
-  "scarlet": scarlet,
-  "shuga": shuga,
-  "silky": silky,
-  "soju": soju,
-  "vanessa": vanessa,
-  "yvie": yvie
+  'akeria': akeria,
+  'ariel': ariel,
+  'brooke': brooke,
+  'honey': honey,
+  'kahanna': kahanna,
+  'mercedes': mercedes,
+  'nina': nina,
+  'plastique': plastique,
+  'rajah': rajah,
+  'scarlet': scarlet,
+  'shuga': shuga,
+  'silky': silky,
+  'soju': soju,
+  'vanessa': vanessa,
+  'yvie': yvie
 }
 
 scores.forEach(score => {
   score.firstImage = queens[score['First Queen'].split(" ")[0].toLowerCase().replace("'", "")];
   score.secondImage = queens[score['Second Queen'].split(" ")[0].toLowerCase().replace("'", "")];
   score.thirdImage = queens[score['Third Queen'].split(" ")[0].toLowerCase().replace("'", "")];
-  console.log(score['Total'])
 })
 
 scores.sort((a,b) => {
@@ -67,14 +69,11 @@ scores.sort((a,b) => {
   return 0;
 })
 
-scores.forEach(score => {
-  console.log(score['Total'])
-})
-
 export default {
   data() {
     return {
-      scores: scores
+      scores: scores,
+      deadQueens: deadQueens
     };
   }
 };
