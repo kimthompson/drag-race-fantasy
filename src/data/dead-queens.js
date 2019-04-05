@@ -3,5 +3,6 @@ export const deadQueens = [
   "Kahanna Montrese",
   "Honey Davenport",
   "Mercedes Iman Diamond",
-  "Ariel Versace"
+  "Ariel Versace",
+  "Scarlet Envy"
 ]

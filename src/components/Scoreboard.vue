@@ -9,11 +9,11 @@
           figcaption {{ score['First Queen'] }}
       span.queen
         figure.mugshot
-            img(:src="score['secondImage']", :class="['headshot', score['Second Queen'] === score['The Bitch'] ? 'bitch' : '']")
+            img(:src="score['secondImage']", :class="['headshot', score['Second Queen'] === score['The Bitch'] ? 'bitch' : '', deadQueens.includes(score['Second Queen']) ? 'dead' : '']")
             figcaption {{ score['Second Queen'] }}
       span.queen
         figure.mugshot
-          img(:src="score['thirdImage']", :class="['headshot', score['Third Queen'] === score['The Bitch'] ? 'bitch' : '']")
+          img(:src="score['thirdImage']", :class="['headshot', score['Third Queen'] === score['The Bitch'] ? 'bitch' : '', deadQueens.includes(score['Second Queen']) ? 'dead' : '']")
           figcaption {{ score['Third Queen'] }}
 </template>
 
