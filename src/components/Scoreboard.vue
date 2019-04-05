@@ -13,7 +13,7 @@
             figcaption {{ score['Second Queen'] }}
       span.queen
         figure.mugshot
-          img(:src="score['thirdImage']", :class="['headshot', score['Third Queen'] === score['The Bitch'] ? 'bitch' : '', deadQueens.includes(score['Second Queen']) ? 'dead' : '']")
+          img(:src="score['thirdImage']", :class="['headshot', score['Third Queen'] === score['The Bitch'] ? 'bitch' : '', deadQueens.includes(score['Third Queen']) ? 'dead' : '']")
           figcaption {{ score['Third Queen'] }}
 </template>
 
