@@ -18,13 +18,13 @@
 {"Episode":"3","Queen":"Nina West","Tag":"#maxi","Points":"7"},
 {"Episode":"3","Queen":"Scarlet Envy","Tag":"#bottom","Points":"-5"},
 {"Episode":"3","Queen":"Shuga Cain","Tag":"#bottom","Points":"-5"},
-{"Episode":"3","Queen":"Akeria C. Davenport","Tag":"#bottom","Points":"-5"},
+{"Episode":"3","Queen":"A'keria C. Davenport","Tag":"#bottom","Points":"-5"},
 {"Episode":"3","Queen":"Plastique Tiara","Tag":"#bottom","Points":"-5"},
 {"Episode":"3","Queen":"Honey Davenport","Tag":"#bottom","Points":"-5"},
 {"Episode":"3","Queen":"Ra'jah D. O'Hara","Tag":"#bottom","Points":"-5"},
 {"Episode":"3","Queen":"Scarlet Envy","Tag":"#shantay","Points":"2"},
 {"Episode":"3","Queen":"Shuga Cain","Tag":"#shantay","Points":"2"},
-{"Episode":"3","Queen":"Akeria C. Davenport","Tag":"#shantay","Points":"2"},
+{"Episode":"3","Queen":"A'keria C. Davenport","Tag":"#shantay","Points":"2"},
 {"Episode":"3","Queen":"Plastique Tiara","Tag":"#shantay","Points":"2"},
 {"Episode":"3","Queen":"Honey Davenport","Tag":"#sashay","Points":"-5"},
 {"Episode":"3","Queen":"Ra'jah D. O'Hara","Tag":"#shantay","Points":"2"},
@@ -46,5 +46,7 @@
 {"Episode":"6","Queen":"Ra'jah D. O'Hara","Tag":"#bottom","Points":"-5"},
 {"Episode":"6","Queen":"Scarlet Envy","Tag":"#bottom","Points":"-5"},
 {"Episode":"6","Queen":"Ra'jah D. O'Hara","Tag":"#shantay","Points":"2"},
-{"Episode":"6","Queen":"Scarlet Envy","Tag":"#sashay","Points":"-5"}
+{"Episode":"6","Queen":"Scarlet Envy","Tag":"#sashay","Points":"-5"},
+{"Episode":"7","Queen":"Nina West","Tag":"#mini","Points":"3"},
+{"Episode":"7","Queen":"Shuga Cain","Tag":"#mini","Points":"3"}
 ]
