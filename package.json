@@ -11,12 +11,14 @@
   "scripts": {
     "start": "parcel src/index.pug",
     "build": "parcel build src/index.pug --public-url ./ --out-dir docs",
+    "testServe": "serve docs",
     "data:clean": "rm ~/Downloads/Drag\\ Race\\ Draft\\ -\\ Scoreboard.csv ~/Downloads/Drag\\ Race\\ Draft\\ -\\ Log.csv",
     "data:format": "csvtojson ~/Downloads/Drag\\ Race\\ Draft\\ -\\ Scoreboard.csv > src/data/leaderboard.json && csvtojson ~/Downloads/Drag\\ Race\\ Draft\\ -\\ Log.csv > src/data/log.json && npm run data:clean"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "csvtojson": "^2.0.8",
+    "parcel": "^1.12.3",
     "vue": "^2.6.8",
     "vue-hot-reload-api": "^2.3.3"
   },
@@ -24,6 +26,7 @@
     "@vue/component-compiler-utils": "^2.6.0",
     "cssnano": "^4.1.10",
     "pug": "^2.0.3",
+    "serve": "^11.0.0",
     "stylus": "^0.54.5",
     "vue-template-compiler": "^2.6.8"
   },
