@@ -7,5 +7,6 @@ export const deadQueens = [
   "Scarlet Envy",
   "Ra'jah D. O'Hara",
   "Plastique Tiara",
-  "Shuga Cain"
+  "Shuga Cain",
+  "Nina West"
 ];
