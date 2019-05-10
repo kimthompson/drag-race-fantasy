@@ -13,7 +13,9 @@
     "build": "parcel build src/index.pug --public-url ./ --out-dir docs",
     "testServe": "serve docs",
     "data:clean": "rm ~/Downloads/Drag\\ Race\\ Draft\\ -\\ Scoreboard.csv ~/Downloads/Drag\\ Race\\ Draft\\ -\\ Log.csv",
-    "data:format": "csvtojson ~/Downloads/Drag\\ Race\\ Draft\\ -\\ Scoreboard.csv > src/data/leaderboard.json && csvtojson ~/Downloads/Drag\\ Race\\ Draft\\ -\\ Log.csv > src/data/log.json && npm run data:clean"
+    "data:format": "csvtojson ~/Downloads/Drag\\ Race\\ Draft\\ -\\ Scoreboard.csv > src/data/leaderboard.json && csvtojson ~/Downloads/Drag\\ Race\\ Draft\\ -\\ Log.csv > src/data/log.json && npm run data:clean",
+    "data:cleanWin": "rm 'D:/Downloads/Drag Race Draft - Scoreboard.csv' 'D:/Downloads/Drag Race Draft - Log.csv'",
+    "data:formatWin": "csvtojson 'D:/Downloads/Drag Race Draft - Scoreboard.csv' > src/data/leaderboard.json && csvtojson 'D:/Downloads/Drag Race Draft - Log.csv' > src/data/log.json && npm run data:cleanWin"
   },
   "dependencies": {
     "axios": "^0.18.0",
