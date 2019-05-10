@@ -6,5 +6,6 @@ export const deadQueens = [
   "Ariel Versace",
   "Scarlet Envy",
   "Ra'jah D. O'Hara",
-  "Plastique Tiara"
-]
+  "Plastique Tiara",
+  "Shuga Cain"
+];
